@@ -2,10 +2,11 @@ package command
 
 import (
 	"fmt"
-	"gcredstash"
-	"github.com/ryanuber/go-glob"
 	"os"
 	"strings"
+
+	"github.com/jnodorp/gcredstash/src/gcredstash"
+	"github.com/ryanuber/go-glob"
 )
 
 type GetCommand struct {

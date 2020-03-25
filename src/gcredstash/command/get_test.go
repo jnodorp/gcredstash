@@ -1,18 +1,18 @@
 package command
 
 import (
-	"gcredstash"
-	. "gcredstash/command"
-	"gcredstash/testutils"
+	"io/ioutil"
+	"os"
+	"regexp"
+	"testing"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/golang/mock/gomock"
-	"io/ioutil"
-	"mockaws"
-	"os"
-	"regexp"
-	"testing"
+	"github.com/jnodorp/gcredstash/src/gcredstash"
+	"github.com/jnodorp/gcredstash/src/gcredstash/testutils"
+	"github.com/jnodorp/gcredstash/src/mockaws"
 )
 
 func TestGetCommand(t *testing.T) {

@@ -2,11 +2,12 @@ package gcredstash
 
 import (
 	"fmt"
+	"strings"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbiface"
 	"github.com/aws/aws-sdk-go/service/kms/kmsiface"
-	"strings"
 )
 
 type Driver struct {

@@ -1,15 +1,15 @@
 package command
 
 import (
-	"gcredstash"
-	. "gcredstash/command"
-	"gcredstash/testutils"
+	"testing"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/kms"
 	"github.com/golang/mock/gomock"
-	"mockaws"
-	"testing"
+	"github.com/jnodorp/gcredstash/src/gcredstash"
+	"github.com/jnodorp/gcredstash/src/gcredstash/testutils"
+	"github.com/jnodorp/gcredstash/src/mockaws"
 )
 
 func TestGetallCommand(t *testing.T) {

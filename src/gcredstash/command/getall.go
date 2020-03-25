@@ -2,9 +2,10 @@ package command
 
 import (
 	"fmt"
-	"gcredstash"
 	"os"
 	"strings"
+
+	"github.com/jnodorp/gcredstash/src/gcredstash"
 )
 
 type GetallCommand struct {
